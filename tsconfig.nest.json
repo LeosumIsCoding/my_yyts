@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2021",
+    "sourceMap": true,
+    "outDir": "./output",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@f/*":[
+        "./src/front/*"
+      ],
+      "@b/*":[
+        "./src/back/*"
+      ],
+      "@t/*":[
+        "./src/types/*"
+      ],
+      "@u/*":[
+        "./src/utils/*"
+      ],
+    },
+  },
+  "include": [
+    "src/main.ts",
+    "src/types/**/*.ts",
+    "src/types/**/*.d.ts",
+    "src/back/**/*.ts",
+    "src/application.config.ts"
+  ]
+}
